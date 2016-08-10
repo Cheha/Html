@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>When adding a number and a string, JavaScript will treat the number as a string.</p>
+
+<p id="demo"></p>
+
+<script>
+    var length = 16;                               // Number
+var lastName = "Johnson";                      // String
+var cars = ["Saab", "Volvo", "BMW"];           // Array
+var x = {firstName:"John", lastName:"Doe"};    // Object
+
+var x = 16 + "Volvo";
+var x = "Volvo" + 16;
+var x = 16 + 4 + "Volvo";
+var x = "Volvo" + 16 + 4;
+document.getElementById("demo").innerHTML = x;
+
+var y;               // Now x is undefined
+var y = 5;           // Now x is a Number
+var y = "John";      // Now x is a String
+
+var answer = "It's alright";             // Single quote inside double quotes
+var answer = "He is called 'Johnny'";    // Single quotes inside double quotes
+var answer = 'He is called "Johnny"';    // Double quotes inside single quotes
+
+typeof "John"                // Returns "string" 
+typeof 3.14                  // Returns "number"
+typeof false                 // Returns "boolean"
+typeof [1,2,3,4]             // Returns "object" (not "array", see note below)
+typeof {name:'John', age:34} // Returns "object"
+
+person = undefined; 
+</script>
+
+</body>
+</html>
+
+
+
